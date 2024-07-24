@@ -6,5 +6,5 @@ from .models import Analyze
 
 # Create your views here.
 class AnalyzeAPIView(ModelViewSet):
-    queryset = Analyze.objects.all()
+    queryset = Analyze.objects.filter(is_actual=True)
     serializer_class = AnalyzeSerializer

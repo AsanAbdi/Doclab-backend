@@ -5,5 +5,5 @@ from .models import Vacancy
 
 # Create your views here.
 class VacancyAPIView(ModelViewSet):
-    queryset = Vacancy.objects.all()
+    queryset = Vacancy.objects.filter(is_actual=True)
     serializer_class = VacancySerializer

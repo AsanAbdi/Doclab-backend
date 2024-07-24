@@ -18,3 +18,6 @@ class Vacancy(models.Model):
         default=True,
         verbose_name='Актульано'
     )
+
+    def __str__(self):
+        return str(self.role)

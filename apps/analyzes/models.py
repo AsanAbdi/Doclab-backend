@@ -17,3 +17,6 @@ class Analyze(models.Model):
         default=True,
         verbose_name='Актуально',
     )
+
+    def __str__(self):
+        return str(self.name)
